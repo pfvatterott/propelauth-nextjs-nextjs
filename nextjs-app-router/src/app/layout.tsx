@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <AuthProvider authUrl={process.env.NEXT_PUBLIC_AUTH_URL}>
+      <AuthProvider authUrl={process.env.NEXT_PUBLIC_AUTH_URL!}>
       <body className={inter.className}>{children}</body>
       </AuthProvider>
     </html>
