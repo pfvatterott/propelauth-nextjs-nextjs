@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@propelauth/nextjs": {
+      "signature": "f6942ee50381ddb610f21243d441fb4f",
+      "file": true
+    }
+  }
+}
