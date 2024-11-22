@@ -1,1 +1,7 @@
 .env
+.DS_Store
+nextjs-app-router/.yalc/
+nextjs-app-router/.next/
+nextjs-app-router/node_modules/
+nextjs-app-router/package-lock.json
+

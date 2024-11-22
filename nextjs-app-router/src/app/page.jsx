@@ -1,28 +1,18 @@
-"use client"
-import {useUser, useRedirectFunctions} from "@propelauth/nextjs/client";
+import {getUser, getAccessToken} from "@propelauth/nextjs/server/app-router";
 import LogoutButton from "@/components/LogoutButton";
-import LoginButton from "@/components/LoginButton"
-import { useEffect } from "react";
 
-const Home = () => {
-  const { loading, user, setActiveOrg } = useUser()
-  
-  
-  if (loading) {
-    return <div>Loading...</div>
-  } else if (user) {
-    setActiveOrg(null)
-    console.log(user)
+
+export default async function Home() {
+  const user = await getUser()
+
+  if (user) {
     return (
       <div>
-       <h2>Hello, {user.email}</h2>
+        <p>User: {user.email}</p>
+        <LogoutButton />
       </div>
     );
-  }
-  else {
-    return (
-      <LoginButton></LoginButton>
-    )
+  } else {
+    return (<h2>Please login</h2>)
   }
 }
-export default Home 

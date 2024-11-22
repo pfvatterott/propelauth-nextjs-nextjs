@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/api/exampleRoute/route.js", "src/app/api/exampleRoute/route.js", "src/app/api/exampleRoute/route.ks"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/api/updateActiveOrgProp/route.js", "src/app/api/updateActiveOrgProp/route.js", "src/app/api/updateActiveOrgProp/route.ks", "src/app/page.jsx", "src/app/testing/page.jsx", "src/app/api/auth/[slug]/route.js", "src/app/test/page.jsx"],
   "exclude": ["node_modules"]
 }
